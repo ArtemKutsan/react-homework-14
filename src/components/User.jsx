@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 function User({ username, status }) {
   return (
     <div className="flex flex-col gap-2">
-      <h3>User Profile</h3>
+      <h4>User Profile</h4>
       <span>Name: {username}</span>
       <span>Status: {status}</span>
     </div>

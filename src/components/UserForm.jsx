@@ -21,11 +21,8 @@ function UserForm({ setUserInfo }) {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col gap-2"
-    >
-      <h3>Edit User Information</h3>
+    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2">
+      <h4>Edit User Information</h4>
 
       <input
         type="text"
