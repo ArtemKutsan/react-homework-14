@@ -23,7 +23,7 @@ function UserForm({ setUserInfo }) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}
+      className="flex flex-col gap-2"
     >
       <h3>Edit User Information</h3>
 
@@ -32,14 +32,14 @@ function UserForm({ setUserInfo }) {
         placeholder="Username"
         {...register('username', { required: 'Username is required' })}
       />
-      {errors.username && <span style={{ color: 'red' }}>{errors.username.message}</span>}
+      {errors.username && <span className="text-red-500">{errors.username.message}</span>}
 
       <input
         type="text"
         placeholder="Status"
         {...register('status', { required: 'Status is required' })}
       />
-      {errors.status && <span style={{ color: 'red' }}>{errors.status.message}</span>}
+      {errors.status && <span className="text-red-500">{errors.status.message}</span>}
 
       <button type="submit">Save</button>
     </form>
