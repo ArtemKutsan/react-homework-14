@@ -28,7 +28,7 @@ function App() {
           </section>
         </main>
       </div>
-      <footer></footer>
+      {/* <footer></footer> */}
     </>
   );
 }
