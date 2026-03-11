@@ -6,15 +6,16 @@ function App() {
   return (
     <>
       <div className="min-h-screen flex flex-col">
-        <header className="py-4">
+        {/* <header className="py-4">
           <div className="container max-w-3xl px-8 mx-auto">
-            <span className="font-semibold">React Homework 14</span>
+            <span className="font-semibold">React</span>
           </div>
-        </header>
+        </header> */}
 
-        <main>
+        <main className="flex-1 py-8">
           <section>
-            <div className="container max-w-3xl mx-auto px-8 flex flex-col flex-1 prose">
+            <div className="container max-w-3xl mx-auto px-8 prose">
+              <h1>React Homework 14</h1>
               <h2>
                 Задача 1: Приложения для управления состоянием пользователя с использованием React и
                 Redux
